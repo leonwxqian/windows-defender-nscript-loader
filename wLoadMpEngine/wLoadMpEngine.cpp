@@ -23,8 +23,17 @@
 
 BYTE x86_strtod[] = {0x8b, 0xff, 0x55, 0x8b, 0xec, 0x6a, 0x00, 0xff, 0x75, 0x0c, 0xff, 0x75, 0x08, 0xe8, 0xc2, 0xf8, 0xff, 0xff, 0x83, 0xc4, 0x0c, 0x5d, 0xc3};
 DWORD dwStrTodLen = 23; //x86_strtod length
+/*
+	@modified based on:  
+	@original author  : Tavis Ormandy
+						https://github.com/taviso/loadlibrary  (GPLv2)
 
+	@writtenby    :   Wenxiang Qian (aka `blastxiang`)
+	@email        :   leonwxqian@gmail.com
+	@website      :   http ://nul.pw
+	@licence      :   GPLv2
 
+*/
 
 //1. GetModuleHandle()
 //2. specify starting address and ending address.
